@@ -3,19 +3,19 @@ package com.distribuida.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "cliente")
-public class Cliente {
+@Table(name = "autor")
+public class Autor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_cliente")
-    private int idCliente;
-    @Column(name = "cedula")
-    private String cedula;
+    @Column(name = "idAutor")
+    private int idAutor;
     @Column(name = "nombre")
     private String nombre;
     @Column(name = "apellido")
     private String apellido;
+    @Column(name = "pais")
+    private String pais;
     @Column(name = "dirrecion")
     private String dirreccion;
     @Column(name = "telofono")
@@ -23,35 +23,26 @@ public class Cliente {
     @Column(name = "correo")
     private String correo;
 
-    // Constructor Vacio
-    public Cliente( ) { }
+    public Autor(){ }
 
-    // Constructor con parametros
-    public Cliente(int idCliente, String cedula, String nombre, String apellido, String dirreccion, String telofono, String correo) {
-        this.idCliente = idCliente;
-        this.cedula = cedula;
+    public Autor(int idAutor, String nombre, String apellido, String pais, String dirreccion, String telofono, String correo) {
+        this.idAutor = idAutor;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.pais = pais;
         this.dirreccion = dirreccion;
         this.telofono = telofono;
         this.correo = correo;
     }
 
     // Metodos getters and setters
-    public int getIdCliente() {
-        return idCliente;
+
+    public int getIdAutor() {
+        return idAutor;
     }
 
-    public void setIdCliente(int idCliente) {
-        this.idCliente = idCliente;
-    }
-
-    public String getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setIdAutor(int idAutor) {
+        this.idAutor = idAutor;
     }
 
     public String getNombre() {
@@ -68,6 +59,14 @@ public class Cliente {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
     }
 
     public String getDirreccion() {
@@ -96,15 +95,14 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "idCliente=" + idCliente +
-                ", cedula='" + cedula + '\'' +
+        return "Autor{" +
+                "idAutor=" + idAutor +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
+                ", pais='" + pais + '\'' +
                 ", dirreccion='" + dirreccion + '\'' +
                 ", telofono='" + telofono + '\'' +
                 ", correo='" + correo + '\'' +
                 '}';
     }
-
 }

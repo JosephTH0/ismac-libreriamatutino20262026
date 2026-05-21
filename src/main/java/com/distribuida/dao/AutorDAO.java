@@ -1,12 +1,13 @@
 package com.distribuida.dao;
 
-import com.distribuida.model.Cliente;
+import com.distribuida.model.Autor;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ClienteDAO extends JpaRepository<Cliente,Integer> {
+public interface AutorDAO extends JpaRepository<Autor,Integer> {
 
     // Comentarios para git hub
 
     // Comentarios para git hub desde casa
+
 
 }

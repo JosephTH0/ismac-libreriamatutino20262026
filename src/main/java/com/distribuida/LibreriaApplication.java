@@ -1,5 +1,6 @@
 package com.distribuida;
 
+import com.distribuida.model.Autor;
 import com.distribuida.model.Cliente;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,6 +25,17 @@ public class LibreriaApplication {
 
 		System.out.println(cliente.toString());
 
+		Autor autor = new Autor(
+				1
+				,"Luis"
+				,"Perez"
+				,"Mexico"
+				,"Quito"
+				,"0912634598"
+				,"luisp@correo.com"
+		);
+
+		System.out.println(cliente.toString());
 
 
 	}
