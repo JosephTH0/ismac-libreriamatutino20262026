@@ -35,8 +35,7 @@ public class LibreriaApplication {
 				,"luisp@correo.com"
 		);
 
-		System.out.println(cliente.toString());
-
+		System.out.println(autor.toString());
 
 	}
 

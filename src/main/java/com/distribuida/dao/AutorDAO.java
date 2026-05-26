@@ -5,9 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AutorDAO extends JpaRepository<Autor,Integer> {
 
-    // Comentarios para git hub
+    // Comentarios para autor
 
-    // Comentarios para git hub desde casa
+    // Comentarios para autor desde casa
 
 
 }

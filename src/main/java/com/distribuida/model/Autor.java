@@ -36,7 +36,6 @@ public class Autor {
     }
 
     // Metodos getters and setters
-
     public int getIdAutor() {
         return idAutor;
     }
@@ -53,13 +52,7 @@ public class Autor {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
+    public String getApellido() {return apellido;}
 
     public String getPais() {
         return pais;
@@ -67,6 +60,10 @@ public class Autor {
 
     public void setPais(String pais) {
         this.pais = pais;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getDirreccion() {
