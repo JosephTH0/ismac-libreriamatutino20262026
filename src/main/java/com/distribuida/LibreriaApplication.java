@@ -26,25 +26,7 @@ public class LibreriaApplication {
 
 		System.out.println(cliente.toString());
 
-		Autor autor = new Autor(
-				1
-				,"Luis"
-				,"Perez"
-				,"Mexico"
-				,"Quito"
-				,"0912634598"
-				,"luisp@correo.com"
-		);
 
-		System.out.println(autor.toString());
-
-		Categoria categoria = new Categoria(
-				1
-				,"Terror"
-				,"Inspirado en hechos reales"
-		);
-
-		System.out.println(autor.toString());
 
 	}
 
